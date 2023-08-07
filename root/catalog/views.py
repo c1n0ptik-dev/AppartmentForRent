@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'catalog/index.html', {
-        'title': 'Каталог',
+        'title': 'Квартири',
         'page': 'index',
         'app': 'catalog'
     })

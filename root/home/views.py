@@ -51,7 +51,7 @@ def service(request):
 
 def apartment_1(request):
     return render(request, 'home/apartment_1.html', {
-        'title': 'Квартира 1',
+        'title': 'Барбюса Анри, 28а',
         'page': 'apartment_1',
         'app': 'home'
     })
