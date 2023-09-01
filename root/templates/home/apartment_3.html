@@ -1,0 +1,85 @@
+{% extends '_layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="style.css">
+
+    {% include '_fragments/Page Header.html' %}
+
+    <section class="gallery">
+        <h2 class="title">Gallery</h2>
+        <div class="gallery-list">
+            <a href="{% static 'img/apartments/3/1.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/1.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/9.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/9.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/2.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/2.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/4.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/4.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/5.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/5.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/6.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/6.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/7.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/7.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/8.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/8.jpg' %}" alt="alt">
+            </a>
+            <a href="{% static 'img/apartments/3/9.jpg' %}" class="gallery-item">
+                <div class="gallery-item-hover">Перегляд</div>
+                <img src="{% static 'img/apartments/3/9.jpg' %}" alt="alt">
+            </a>
+    </section>
+    <div class="p-4 mt-2">
+        <h2 class="title">Опис</h2>
+       <p >Оренда 3-кімнатної квартири 106м2 на 7-му поверсі
+Юрія Іллєнка 83д
+
+Планування:
+Кухня-вітальня
+Спальня
+Кабінет
+Санвузол з душем
+Гардеробна кімната
+
+Квартира укомплектована всім необхідним для життя
+В квартирі 3 кімнати. Загальний стан квартири - Євроремонт. Комісія за послуги 50 %</p>
+       <div class="d-flex justify-content-between">
+            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="/orders3">Бронювання</a>
+       </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+        $(".gallery-list").magnificPopup({
+            delegate: "a",
+            type: "image",
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
+
+{% include '_fragments/Newsletter.html' %}
+{% endblock content %}

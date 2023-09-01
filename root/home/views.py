@@ -55,3 +55,31 @@ def apartment_1(request):
         'page': 'apartment_1',
         'app': 'home'
     })
+
+def apartment_2(request):
+    return render(request, 'home/apartment_2.html', {
+        'title': 'Мишуги Олександра, 1/4',
+        'page': 'apartment_2',
+        'app': 'home'
+    })
+
+def orders2(request):
+    return render(request, 'home/orders2.html', {
+        'title': 'Мишуги Олександра, 1/4',
+        'page': 'orders2',
+        'app': 'home'
+    })
+
+def apartment_3(request):
+    return render(request, 'home/apartment_3.html', {
+        'title': 'Юрія Іллєнка, 83',
+        'page': 'apartment_3',
+        'app': 'home'
+    })
+
+def orders3(request):
+    return render(request, 'home/orders3.html', {
+        'title': 'Юрія Іллєнка, 83',
+        'page': 'orders3',
+        'app': 'home'
+    })

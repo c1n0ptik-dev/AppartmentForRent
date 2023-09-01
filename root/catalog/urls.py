@@ -6,5 +6,4 @@ urlpatterns = [
     path('apartment_1', apartment_1),
 
 
-
 ]
